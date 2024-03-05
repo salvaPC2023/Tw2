@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Mi Portafolio</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Agregar estilos adicionales desde style.css */
+
+    /* Sección Acerca de Mí */
+    #about {
+      min-height: 70vh;
+      display: flex;
+      align-items: center;
+    }
+
+    /* Estilos generales para las habilidades, estudios y contacto */
+    .col-md-6 {
+      margin-bottom: 30px;
+    }
+
+    /* Centrar las habilidades y estudios en tres columnas */
+    #skills, #studies {
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      flex-wrap: wrap;
+    }
+
+    /* Estilos para los botones Ver */
+    .btn-block {
+      margin-top: 10px;
+    }
+
+    /* Estilo para reducir el tamaño de las imágenes */
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Estilos para la sección de estudios */
+    #studies .card {
+      margin: 10px;
+    }
+
+    /* Estilos para la sección de contacto */
+    #contact {
+      text-align: center;
+      margin-top: 30px;
+    }
+    
+    /* Estilo adicional para reducir el tamaño de las imágenes en habilidades */
+    #skills img {
+      max-width: 180px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Portafolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#about">Acerca de Mí</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Habilidades</a></li>
+        <li class="nav-item"><a class="nav-link" href="#studies">Estudios</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contactos</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+
+    <!-- Sección Acerca de Mí -->
+    <section id="about" class="container mt-5">
+      <div class="row">
+        <!-- Columna izquierda -->
+        <div class="col-lg-6 d-flex align-items-center">
+          <h2>Salvador Patty</h2>
+          <p>Estudiante de Ingeniería de Sistemas en la Universidad Católica Boliviana</p>
+        </div>
+        <!-- Columna derecha -->
+        <div class="col-lg-6">
+          <img src="gato.jpeg" alt="Salvador Patty" class="img-fluid mx-auto d-block">
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Habilidades -->
+    <section id="skills" class="container mt-5">
+      <h2 class="text-center">Habilidades</h2>
+      <div class="row mt-4">
+        <!-- Habilidad 1 - HTML -->
+        <div class="col-md-6">
+          <img src="html.png" alt="HTML" class="img-fluid mx-auto d-block">
+          <h4 class="text-center mt-2">HTML</h4>
+          <p class="text-center">
+            Uso de etiquetas HTML básicas como &lt;html&gt;, &lt;head&gt;, &lt;body&gt;, &lt;div&gt;, &lt;p&gt;, &lt;img&gt;, etc.<br>
+            Entiendo la estructura básica de un documento HTML.<br>
+            Creo listas, enlaces, y trabajo con formularios básicos.
+          </p>
+          <button class="btn btn-primary btn-block" data-toggle="modal" data-target="#modalHTML">Ver</button>
+        </div>
+
+        <!-- Habilidad 2 - CSS -->
+        <div class="col-md-6">
+          <img src="css.png" alt="CSS" class="img-fluid mx-auto d-block">
+          <h4 class="text-center mt-2">CSS</h4>
+          <p class="text-center">
+            Conozco la selección de elementos mediante selectores.<br>
+            Aplico estilos como colores, tamaños de fuente, márgenes y paddings.<br>
+            Comprendo la cascada y la herencia en CSS.<br>
+            Tengo conocimientos básicos de diseño responsivo.
+          </p>
+          <button class="btn btn-primary btn-block" data-toggle="modal" data-target="#modalCSS">Ver</button>
+        </div>
+
+        <!-- Habilidad 3 - JavaScript -->
+        <div class="col-md-6">
+          <img src="js.png" alt="JavaScript" class="img-fluid mx-auto d-block">
+          <h4 class="text-center mt-2">JavaScript</h4>
+          <p class="text-center">
+            Manipulación del DOM (Document Object Model).<br>
+            Manejo de eventos como clics, cambios y teclas.<br>
+            Variables, condicionales y bucles.<br>
+            Trabajo con funciones y objetos básicos.<br>
+            Conocimiento acerca de POO.
+          </p>
+          <button class="btn btn-primary btn-block" data-toggle="modal" data-target="#modalJS">Ver</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Estudios -->
+    <section id="studies" class="container mt-5">
+      <h2 class="text-center">Estudios</h2>
+      <div class="row mt-4">
+        <!-- Estudio 1 - Colegio Cristiano Colcapirhua -->
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Colegio Cristiano Colcapirhua</h5>
+              <p class="card-text">Bachiller en Ciencias y Letras</p>
+            </div>
+          </div>
+        </div>
+        <!-- Estudio 2 - Colegio Kusikuna -->
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Colegio Kusikuna</h5>
+              <p class="card-text">Bachiller Técnico en Informática</p>
+            </div>
+          </div>
+        </div>
+        <!-- Estudio 3 - Septimo Semestre de la Universidad Catolica Boliviana -->
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Universidad Católica Boliviana</h5>
+              <p class="card-text">Septimo Semestre de Ingeniería de Sistemas</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contact" class="container mt-5">
+      <h2 class="text-center">Contacto</h2>
+      <p>Número de teléfono: 1234565768945</p>
+      <p>Correo electrónico: Salvadore@yahoo.com</p>
+    </section>
+
+    <!-- Agregar las secciones restantes según las especificaciones -->
+
+  </div>
+
+  <!-- Scripts de Bootstrap y otros -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
